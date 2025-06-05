@@ -1,8 +1,16 @@
 import React from 'react';
 import { AppBar, Toolbar, Button, Box, Typography } from '@mui/material';
-import { Link } from 'react-scroll';
+import { Link as ScrollLink, scroller } from 'react-scroll';
 
 const Navbar: React.FC = () => {
+  const scrollToSection = (section: string) => {
+    scroller.scrollTo(section, {
+      duration: 500,
+      smooth: true,
+      offset: -70 // Adjust this value based on your navbar height
+    });
+  };
+
   return (
     <AppBar position="fixed" sx={{ background: 'rgba(16, 24, 32, 0.95)' }}>
       <Toolbar sx={{ justifyContent: 'space-between' }}>
@@ -14,34 +22,29 @@ const Navbar: React.FC = () => {
             color: 'white',
             cursor: 'pointer'
           }}
+          onClick={() => scrollToSection('home')}
         >
           Scrubbed Robotics
         </Typography>
         <Box sx={{ display: 'flex', gap: 2 }}>
           <Button
             color="inherit"
-            component={Link}
-            to="contact"
-            smooth={true}
             sx={{ textTransform: 'none' }}
+            onClick={() => scrollToSection('contact')}
           >
             Get in touch
           </Button>
           <Button
             color="inherit"
-            component={Link}
-            to="services"
-            smooth={true}
             sx={{ textTransform: 'none' }}
+            onClick={() => scrollToSection('services')}
           >
             How it works
           </Button>
           <Button
             color="inherit"
-            component={Link}
-            to="contact"
-            smooth={true}
             sx={{ textTransform: 'none' }}
+            onClick={() => scrollToSection('contact')}
           >
             Contact
           </Button>
