@@ -1,14 +1,13 @@
 import React from 'react';
 import { Box, Typography, Container } from '@mui/material';
 import { motion } from 'framer-motion';
-import robotImage from '../assets/robot-car.jpg';
 
 const Hero = () => {
   return (
     <Box
       id="home"
       sx={{
-        background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(${robotImage})`,
+        background: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("/images/robot-car.jpg")',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         height: '100vh',
