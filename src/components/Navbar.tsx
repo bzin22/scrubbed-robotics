@@ -46,7 +46,7 @@ const Navbar: React.FC = () => {
             sx={{ textTransform: 'none' }}
             onClick={() => scrollToSection('contact')}
           >
-            Contact
+            Team
           </Button>
           <Button
             color="inherit"
