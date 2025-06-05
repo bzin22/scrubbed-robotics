@@ -1,14 +1,6 @@
 # Scrubbed Robotics Website
 
-A modern, responsive website for Scrubbed Robotics, showcasing our autonomous vehicle cleaning solutions.
-
-## Features
-
-- Modern, responsive design
-- Interactive UI components
-- Smooth scrolling navigation
-- Contact form integration
-- Showcase of robotic cleaning technology
+Scrubbed Robotics, autonomous vehicle cleaning solutions.
 
 ## Technologies Used
 
@@ -17,19 +9,6 @@ A modern, responsive website for Scrubbed Robotics, showcasing our autonomous ve
 - Material-UI
 - Framer Motion
 - React Scroll
-
-## Getting Started
-
-1. Clone the repository
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Start the development server:
-   ```bash
-   npm start
-   ```
-4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser
 
 ## Project Structure
 
